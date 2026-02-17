@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Dioses · Crónicas del Olimpo</title>
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!--header-->
+    <header class="header-principal">
+        <div class="container">
+            <div class="header-content"> 
+                <div class="logo-container"> 
+                    <img src="images/logo dorado sin fondo.png" alt="Crónicas del Olimpo" class="logo">
+                    <h1 class="site-title">Crónicas del Olimpo</h1>
+                </div>
+                <p class="epigrafe">"Donde los inmortales gobiernan el destino de los hombres"</p>  <!-- Cambiado de header-epigrafe a epigrafe -->
+            </div>
+        
+            <nav class="nav-principal"> 
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">🏛️ Inicio</a></li>
+                    <li><a href="dioses.html" class="nav-link active">⚡ Dioses</a></li>
+                    <li><a href="bestiario.html" class="nav-link">🐉 Bestiario</a></li>
+                    <li><a href="oraculo.html" class="nav-link">🔮 Oráculo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- titulo de pagina -->
+        <section class="pagina-titulo">
+            <div class="container">
+                <h2>⚡ Los Doce Olímpicos</h2>
+                <p>Los inmortales que gobiernan desde el Monte Olimpo</p>
+            </div>
+        </section>
+
+        <!-- FILTRO POR CATEGORÍAS (OPCIONAL) -->
+        <section class="filtro-dioses">
+            <div class="container">
+                <div class="filtro-botones">
+                    <button class="filtro-btn" data-filtro="todos">Todos</button>
+                    <button class="filtro-btn" data-filtro="olimpicos">Olímpicos</button>
+                    <button class="filtro-btn" data-filtro="otros">Otros</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- grid de dioses -->
+        <section class="dioses-grid-section">
+            <div class="container">
+                <div class="dioses-grid" id="dioses-grid">
+                    <!-- ZEUS -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--mar);">
+                            <span class="dios-icono">⚡</span>
+                            <h3 class="dios-nombre">Zeus</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Rey de los Dioses</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Cielo, clima, justicia</p>
+                                <p><strong>Símbolos:</strong> Rayo, águila, roble</p>
+                                <p class="dios-descripcion">El soberano del Olimpo. Gobierna con mano firme y un rayo que hace temblar la tierra.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- HERA -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--ciruela);">
+                            <span class="dios-icono">🦚</span>
+                            <h3 class="dios-nombre">Hera</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Reina de los Dioses</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Matrimonio, mujeres, nacimiento</p>
+                                <p><strong>Símbolos:</strong> Pavo real, corona, granada</p>
+                                <p class="dios-descripcion">Majestuosa e implacable. Protectora del matrimonio pero vengativa con las amantes de Zeus.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- POSEIDÓN -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--mar);">
+                            <span class="dios-icono">🔱</span>
+                            <h3 class="dios-nombre">Poseidón</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Señor de los Mares</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Mares, terremotos, caballos</p>
+                                <p><strong>Símbolos:</strong> Tridente, delfín, caballo</p>
+                                <p class="dios-descripcion">El Sacudidor de la Tierra. Segundo en poder tras Zeus, prefiere su palacio submarino.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ATENEA -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--castaño);">
+                            <span class="dios-icono">🦉</span>
+                            <h3 class="dios-nombre">Atenea</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Diosa de la Sabiduría</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Sabiduría, guerra estratégica</p>
+                                <p><strong>Símbolos:</strong> Búho, olivo, égida</p>
+                                <p class="dios-descripcion">Nació de la frente de Zeus, armada y lista para la batalla. La estrategia sobre la fuerza bruta.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- APOLO -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--castaño);">
+                            <span class="dios-icono">☀️</span>
+                            <h3 class="dios-nombre">Apolo</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Dios de la Luz</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Sol, música, profecía</p>
+                                <p><strong>Símbolos:</strong> Lira, arco, laurel</p>
+                                <p class="dios-descripcion">El más bello de los dioses. Su oráculo en Delfos guiaba el destino de los mortales.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ARTEMISA -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--marfil);">
+                            <span class="dios-icono">🌙</span>
+                            <h3 class="dios-nombre">Artemisa</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Diosa de la Caza</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Caza, naturaleza, luna</p>
+                                <p><strong>Símbolos:</strong> Arco de plata, ciervo, luna</p>
+                                <p class="dios-descripcion">Independiente y feroz. Juró no casarse y protege a las doncellas y los bosques.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ARES -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--ladrillo);">
+                            <span class="dios-icono">⚔️</span>
+                            <h3 class="dios-nombre">Ares</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Dios de la Guerra</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Guerra, violencia, furia</p>
+                                <p><strong>Símbolos:</strong> Lanza, escudo, casco</p>
+                                <p class="dios-descripcion">El aspecto más salvaje de la batalla. Impetuoso y sanguinario.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AFRODITA -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--ciruela);">
+                            <span class="dios-icono">🕊️</span>
+                            <h3 class="dios-nombre">Afrodita</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Diosa del Amor</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Amor, belleza, deseo</p>
+                                <p><strong>Símbolos:</strong> Paloma, rosa, espejo</p>
+                                <p class="dios-descripcion">Nació de la espuma del mar. Su belleza desataba pasiones entre dioses y mortales.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- HEFESTO -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--castaño);">
+                            <span class="dios-icono">🔨</span>
+                            <h3 class="dios-nombre">Hefesto</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Dios del Fuego</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Fuego, forja, artesanía</p>
+                                <p><strong>Símbolos:</strong> Yunque, martillo, tenazas</p>
+                                <p class="dios-descripcion">El artesano divino. Creador de los rayos de Zeus y las armas de los héroes.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- DEMÉTER -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--castaño);">
+                            <span class="dios-icono">🌾</span>
+                            <h3 class="dios-nombre">Deméter</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Diosa de la Agricultura</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Cosechas, estaciones, fertilidad</p>
+                                <p><strong>Símbolos:</strong> Espiga, antorcha, cornucopia</p>
+                                <p class="dios-descripcion">Su alegría trae la primavera; su tristeza, el invierno. Madre de Perséfone.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- HERMES -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--mar);">
+                            <span class="dios-icono">🪽</span>
+                            <h3 class="dios-nombre">Hermes</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Mensajero de los Dioses</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Viajes, comercio, mensajeros</p>
+                                <p><strong>Símbolos:</strong> Caduceo, sandalias aladas</p>
+                                <p class="dios-descripcion">El único que puede viajar entre mundos. Guía las almas al Inframundo.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- DIONISO -->
+                    <article class="card-dios" data-categoria="olimpicos todos">
+                        <div class="card-dios-header" style="border-top-color: var(--ciruela);">
+                            <span class="dios-icono">🍷</span>
+                            <h3 class="dios-nombre">Dioniso</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Dios del Vino</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Vino, teatro, éxtasis</p>
+                                <p><strong>Símbolos:</strong> Tirso, vid, máscaras</p>
+                                <p class="dios-descripcion">El libertador. Rompe las inhibiciones y trae la locura sagrada.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- HADES -->
+                    <article class="card-dios" data-categoria="otros todos">
+                        <div class="card-dios-header" style="border-top-color: var(--alquitran);">
+                            <span class="dios-icono">💀</span>
+                            <h3 class="dios-nombre">Hades</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Señor del Inframundo</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Inframundo, riquezas, almas</p>
+                                <p><strong>Símbolos:</strong> Casco de invisibilidad, Cerbero</p>
+                                <p class="dios-descripcion">El mayor de los hermanos. Severo pero justo. Raramente visita el Olimpo.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--PERSEFONE-->
+                    <article class="card-dios" data-categoria="otros todos">
+                        <div class="card-dios-header" style="border-top-color: var(--alquitran);">
+                            <span class="dios-icono">🌸</span>
+                            <h3 class="dios-nombre">Perséfone</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Diosa del Inframundo</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Flores, primavera, fertilidad</p>
+                                <p><strong>Símbolos:</strong> Peral, amapolas, flores de primavera</p>
+                                <p class="dios-descripcion">La diosa del inframundo. Creadora de la estación de la primavera.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--HECATE-->
+                    <article class="card-dios" data-categoria="otros todos">
+                        <div class="card-dios-header" style="border-top-color: var(--alquitran);">
+                            <span class="dios-icono">🔮</span>
+                            <h3 class="dios-nombre">Hécate</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Diosa de las Encrucijadas</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Encrucijadas, magia, sombras</p>
+                                <p><strong>Símbolos:</strong> Casco de invisibilidad, Cerbero</p>
+                                <p class="dios-descripcion">La diosa de los caminos cruzados. Guía a los viajeros y protege las encrucijadas mágicas.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--TANATOS-->
+                    <article class="card-dios" data-categoria="otros todos">
+                        <div class="card-dios-header" style="border-top-color: var(--alquitran);">
+                            <span class="dios-icono">🦋</span>
+                            <h3 class="dios-nombre">Tánatos</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Dios de la Muerte</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Muerte, descanso eterno, almas</p>
+                                <p><strong>Símbolos:</strong> Antorcha incertida, mariposas, amapolas</p>
+                                <p class="dios-descripcion">El dios de la muerte. Acompaña a las almas en su tránsito al más allá.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--NEMESIS-->
+                    <article class="card-dios" data-categoria="otros todos">
+                        <div class="card-dios-header" style="border-top-color: var(--alquitran);">
+                            <span class="dios-icono">⚖️</span>
+                            <h3 class="dios-nombre">Némesis</h3>
+                        </div>
+                        <div class="card-dios-body">
+                            <p class="dios-titulo">Diosa de la Venganza</p>
+                            <div class="dios-detalles">
+                                <p><strong>Dominio:</strong> Venganza, justicia divina, equidad</p>
+                                <p><strong>Símbolos:</strong> Antorcha incertida, mariposas, amapolas</p>
+                                <p class="dios-descripcion">La diosa de la venganza. Representa la justicia divina y el equilibrio entre los mortales.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-principal">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="images/logo negro sin fondo.png" alt="Crónicas del Olimpo" class="footer-logo">
+                    <p>Crónicas del Olimpo © 2026</p>
+                    <p>Proyecto académico de Diseño Web</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explora</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="dioses.html">Dioses</a></li>
+                        <li><a href="bestiario.html">Bestiario</a></li>
+                        <li><a href="oraculo.html">Oráculo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-creditos">
+                    <h4>El Olimpo</h4>
+                    <p>12 dioses olímpicos</p>
+                    <p>Criaturas mitológicas</p>
+                    <p>El destino te espera</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><a href="#top">⬆️ Regresar al Olimpo</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/js.js"></script>
+</body>
+</html>

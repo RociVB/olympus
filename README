@@ -1,0 +1,35 @@
+# 🏛️ Crónicas del Olimpo
+
+![Crónicas del Olimpo](images/logo%20dorado%20sin%20fondo.png)
+
+Sitio web de mitología griega desarrollado para la **e-actividad 3.1** de Diseño Web.  
+Un viaje interactivo por el Monte Olimpo, sus dioses, criaturas y misterios.
+
+---
+
+## 📋 **DESCRIPCIÓN**
+
+Página web informativa sobre la mitología de la antigua Grecia, con un diseño inspirado en la estética clásica y una paleta de colores personalizada "La Odisea". El sitio cuenta con cuatro secciones principales que permiten explorar el fascinante mundo de los dioses olímpicos, las criaturas mitológicas y consultar el oráculo.
+
+---
+
+## 🚀 **CÓMO VER EL PROYECTO**
+
+### Opción 1: Ver en línea (GitHub Pages)
+1. Ve a: `https://RociVB.github.io/olympus/`
+2. Navega por las diferentes secciones usando el menú superior
+
+### Opción 2: Clonar y ejecutar localmente
+```bash
+# Clonar el repositorio
+git clone https://github.com/RociVB/olympus.git
+
+# Entrar a la carpeta
+cd olympus
+
+# Abrir index.html en tu navegador
+# En Mac:
+open index.html
+# En Windows:
+start index.html
+# O simplemente haz doble clic en el archivo

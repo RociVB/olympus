@@ -1,0 +1,545 @@
+CSSStyleSheet (style.css)
+│
+├── @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Forum&display=swap')
+│
+├── :root
+│   ├── --ciruela: #732449
+│   ├── --marfil: #F2E6D8
+│   ├── --castaño: #8C521F
+│   ├── --ladrillo: #8C3E37
+│   ├── --alquitran: #260101
+│   ├── --mar: #1D4F8D
+│   ├── --fuente-titulos: 'Cormorant Garamond', serif
+│   ├── --fuente-texto: 'Forum', cursive
+│   ├── --espaciado-sm: 8px
+│   ├── --espaciado-md: 16px
+│   ├── --espaciado-lg: 32px
+│   ├── --espaciado-xl: 48px
+│   ├── --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.08)
+│   ├── --sombra-media: 0 8px 20px rgba(0, 0, 0, 0.12)
+│   └── --sombra-hover: 0 12px 25px rgba(0, 0, 0, 0.2)
+│
+├── * (selector universal)
+│   ├── margin: 0
+│   ├── padding: 0
+│   └── box-sizing: border-box
+│
+├── body
+│   ├── font-family: var(--fuente-texto)
+│   ├── background: var(--marfil)
+│   ├── color: var(--alquitran)
+│   └── line-height: 1.6
+│
+├── h1, h2, h3
+│   ├── font-family: var(--fuente-titulos)
+│   └── color: var(--castaño)
+│
+├── .container
+│   ├── max-width: 1200px
+│   ├── margin: 0 auto
+│   └── padding: 0 20px
+│
+├── .header-principal
+│   ├── background: linear-gradient(135deg, var(--alquitran), var(--ciruela))
+│   ├── border-bottom: 3px solid var(--ladrillo)
+│   ├── box-shadow: var(--sombra-media)
+│   ├── position: sticky
+│   ├── top: 0
+│   └── z-index: 1000
+│
+├── .header-content
+│   ├── display: flex
+│   ├── align-items: center
+│   ├── justify-content: space-between
+│   ├── padding: 10px 0
+│   └── flex-wrap: wrap
+│
+├── .logo-container
+│   ├── display: flex
+│   ├── align-items: center
+│   └── gap: 10px
+│
+├── .logo
+│   ├── height: 45px
+│   ├── width: auto
+│   └── filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3))
+│
+├── .site-title
+│   ├── color: var(--marfil)
+│   ├── font-size: 1.8rem
+│   ├── text-shadow: 1px 1px 3px rgba(0,0,0,0.5)
+│   └── margin: 0
+│
+├── .epigrafe
+│   ├── color: white
+│   ├── font-size: 1rem
+│   ├── font-style: italic
+│   ├── border-left: 3px solid var(--castaño)
+│   ├── padding-left: 15px
+│   └── text-shadow: 0 1px 3px black
+│
+├── .nav-principal
+│   ├── background: var(--alquitran)
+│   └── padding: 8px 0
+│
+├── .nav-menu
+│   ├── list-style: none
+│   ├── display: flex
+│   ├── justify-content: center
+│   └── gap: 20px
+│
+├── .nav-menu a
+│   ├── color: var(--marfil)
+│   ├── text-decoration: none
+│   ├── padding: 5px 15px
+│   ├── border-radius: 20px
+│   └── transition: all 0.2s ease
+│
+├── .nav-menu a:hover
+│   ├── background: var(--mar)
+│   ├── transform: translateY(-1px)
+│   └── box-shadow: var(--sombra-suave)
+│
+├── .nav-menu a.active
+│   └── background: var(--mar)
+│
+├── .pagina-titulo
+│   ├── text-align: center
+│   ├── padding: 30px 0
+│   ├── border-bottom: 2px solid var(--castaño)
+│   └── margin-bottom: 30px
+│
+├── .pagina-titulo h2
+│   ├── font-size: 2.5rem
+│   └── margin-bottom: 5px
+│
+├── .pagina-titulo p
+│   ├── color: var(--ciruela)
+│   └── font-style: italic
+│
+├── .hero
+│   ├── background: linear-gradient(135deg, var(--marfil) 0%, #ffffff 100%)
+│   └── padding: var(--espaciado-xl) 0
+│
+├── .hero-grid
+│   ├── display: grid
+│   ├── grid-template-columns: 1fr 1fr
+│   ├── gap: var(--espaciado-xl)
+│   └── align-items: center
+│
+├── .hero-texto h2
+│   ├── font-size: 3rem
+│   └── color: var(--ciruela)
+│
+├── .hero-subtitulo
+│   ├── font-size: 1.4rem
+│   ├── color: var(--castaño)
+│   ├── font-weight: 600
+│   └── margin-bottom: var(--espaciado-lg)
+│
+├── .hero-botones
+│   ├── display: flex
+│   ├── gap: var(--espaciado-md)
+│   └── margin-top: var(--espaciado-lg)
+│
+├── .hero-imagen img
+│   ├── width: 100%
+│   ├── border-radius: var(--borde-radio-grande)
+│   └── box-shadow: var(--sombra-fuerte)
+│
+├── .btn
+│   ├── display: inline-block
+│   ├── padding: var(--espaciado-sm) var(--espaciado-lg)
+│   ├── border-radius: var(--borde-radio)
+│   ├── text-decoration: none
+│   ├── font-weight: 600
+│   ├── transition: all 0.3s ease
+│   ├── font-family: var(--fuente-titulos)
+│   ├── font-size: 1.2rem
+│   └── border: 2px solid transparent
+│
+├── .btn-primario
+│   ├── background-color: var(--mar)
+│   └── color: var(--marfil)
+│
+├── .btn-primario:hover
+│   ├── background-color: var(--ciruela)
+│   ├── transform: translateY(-3px)
+│   └── box-shadow: var(--sombra-media)
+│
+├── .btn-secundario
+│   ├── background-color: transparent
+│   ├── color: var(--castaño)
+│   └── border: 2px solid var(--castaño)
+│
+├── .btn-secundario:hover
+│   ├── background-color: var(--castaño)
+│   ├── color: var(--marfil)
+│   └── transform: translateY(-3px)
+│
+├── .seccion-titulo
+│   ├── text-align: center
+│   ├── margin-bottom: var(--espaciado-xl)
+│   └── display: block
+│
+├── .caracteristicas-grid
+│   ├── display: grid
+│   ├── grid-template-columns: repeat(3, 1fr)
+│   └── gap: var(--espaciado-lg)
+│
+├── .card-caracteristica
+│   ├── background-color: white
+│   ├── padding: var(--espaciado-lg)
+│   ├── border-radius: var(--borde-radio-grande)
+│   ├── text-align: center
+│   ├── box-shadow: var(--sombra-suave)
+│   ├── transition: all 0.3s ease
+│   ├── border: 1px solid var(--castaño)
+│   ├── position: relative
+│   └── overflow: hidden
+│
+├── .card-caracteristica::before
+│   ├── content: ''
+│   ├── position: absolute
+│   ├── top: 0
+│   ├── left: 0
+│   ├── right: 0
+│   ├── height: 5px
+│   └── background: linear-gradient(90deg, var(--ciruela), var(--mar))
+│
+├── .card-caracteristica:hover
+│   ├── transform: translateY(-10px)
+│   └── box-shadow: var(--sombra-fuerte)
+│
+├── .caracteristica-icono
+│   ├── font-size: 3rem
+│   └── margin-bottom: var(--espaciado-md)
+│
+├── .card-caracteristica h3
+│   ├── color: var(--ciruela)
+│   └── margin-bottom: var(--espaciado-sm)
+│
+├── .card-link
+│   ├── color: var(--mar)
+│   ├── text-decoration: none
+│   ├── font-weight: 600
+│   ├── display: inline-block
+│   ├── margin-top: var(--espaciado-md)
+│   └── transition: all 0.3s ease
+│
+├── .card-link:hover
+│   ├── color: var(--castaño)
+│   └── transform: translateX(5px)
+│
+├── .cita-epica
+│   ├── background: linear-gradient(135deg, var(--alquitran) 0%, var(--ciruela) 100%)
+│   ├── color: var(--marfil)
+│   ├── padding: 30px 0
+│   ├── text-align: center
+│   └── margin: 30px 0
+│
+├── .cita-epica blockquote
+│   ├── font-size: 1.5rem
+│   ├── font-family: var(--fuente-titulos)
+│   ├── font-style: italic
+│   ├── max-width: 700px
+│   ├── margin: 0 auto 10px
+│   ├── quotes: "«" "»"
+│   └── line-height: 1.4
+│
+├── .cita-epica blockquote::before
+│   ├── content: "«"
+│   ├── color: var(--castaño)
+│   ├── font-size: 2rem
+│   └── margin-right: 8px
+│
+├── .cita-epica blockquote::after
+│   ├── content: "»"
+│   ├── color: var(--castaño)
+│   ├── font-size: 2rem
+│   └── margin-left: 8px
+│
+├── .cita-epica cite
+│   ├── color: var(--castaño)
+│   ├── font-size: 1rem
+│   └── display: block
+│
+├── .dioses-grid
+│   ├── display: grid
+│   ├── grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
+│   ├── gap: 25px
+│   └── margin: 30px 0
+│
+├── .card-dios
+│   ├── background: white
+│   ├── border-radius: 12px
+│   ├── overflow: hidden
+│   ├── box-shadow: var(--sombra-suave)
+│   ├── border: 1px solid var(--castaño)
+│   └── transition: all 0.2s ease
+│
+├── .card-dios:hover
+│   ├── transform: translateY(-4px)
+│   └── box-shadow: var(--sombra-hover)
+│
+├── .card-dios-header
+│   ├── padding: 15px
+│   ├── border-top: 5px solid var(--castaño)
+│   ├── display: flex
+│   ├── align-items: center
+│   ├── gap: 10px
+│   └── background: var(--marfil)
+│
+├── .dios-icono
+│   └── font-size: 2rem
+│
+├── .dios-nombre
+│   ├── margin: 0
+│   └── font-size: 1.5rem
+│
+├── .card-dios-body
+│   └── padding: 15px
+│
+├── .dios-titulo
+│   ├── color: var(--mar)
+│   ├── font-weight: 600
+│   └── margin-bottom: 10px
+│
+├── .filtro-dioses
+│   └── padding: 15px 0
+│
+├── .filtro-botones
+│   ├── display: flex
+│   ├── justify-content: center
+│   └── gap: 10px
+│
+├── .filtro-btn
+│   ├── padding: 8px 20px
+│   ├── border: 2px solid var(--castaño)
+│   ├── border-radius: 25px
+│   ├── background: transparent
+│   ├── color: var(--castaño)
+│   ├── cursor: pointer
+│   └── transition: all 0.2s ease
+│
+├── .filtro-btn:hover
+│   ├── background: var(--castaño)
+│   ├── color: var(--marfil)
+│   ├── transform: scale(1.02)
+│   └── box-shadow: var(--sombra-suave)
+│
+├── .filtro-btn.active
+│   ├── background: var(--castaño)
+│   └── color: var(--marfil)
+│
+├── .bestiario-grid
+│   ├── display: grid
+│   ├── grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))
+│   ├── gap: 25px
+│   └── margin: 30px 0
+│
+├── .card-criatura
+│   ├── background: white
+│   ├── border-radius: 12px
+│   ├── overflow: hidden
+│   ├── box-shadow: var(--sombra-suave)
+│   ├── border: 1px solid var(--ladrillo)
+│   └── transition: all 0.2s ease
+│
+├── .card-criatura:hover
+│   ├── transform: translateY(-4px) rotate(0.5deg)
+│   └── box-shadow: var(--sombra-hover)
+│
+├── .criatura-header
+│   ├── background: linear-gradient(135deg, var(--alquitran), var(--ladrillo))
+│   ├── color: white
+│   ├── padding: 15px
+│   ├── display: flex
+│   └── align-items: center
+│   └── gap: 10px
+│
+├── .criatura-header h3
+│   ├── color: white
+│   └── margin: 0
+│
+├── .criatura-body
+│   └── padding: 15px
+│
+├── .criatura-clasificacion
+│   ├── color: var(--ladrillo)
+│   ├── font-weight: 600
+│   ├── font-size: 0.9rem
+│   └── margin-bottom: 10px
+│
+├── .oraculo-contenido
+│   ├── background: white
+│   ├── padding: 30px
+│   ├── border-radius: 20px
+│   ├── box-shadow: var(--sombra-media)
+│   └── border: 2px solid var(--ciruela)
+│
+├── .oraculo-grid
+│   ├── display: grid
+│   ├── grid-template-columns: 1fr 1.5fr
+│   └── gap: 30px
+│
+├── .oraculo-mensaje
+│   ├── background: linear-gradient(135deg, var(--alquitran) 0%, var(--ciruela) 100%)
+│   ├── color: var(--marfil)
+│   ├── padding: 10px 10px 10px 20px
+│   ├── border-radius: 12px
+│   ├── border-left: 5px solid var(--castaño)
+│   └── box-shadow: var(--sombra-media)
+│
+├── .oraculo-mensaje h3
+│   ├── font-size: 1.4rem
+│   ├── margin-bottom: 8px
+│   └── color: var(--marfil)
+│
+├── .oraculo-mensaje p
+│   ├── font-size: 0.9rem
+│   ├── line-height: 1.4
+│   └── margin-bottom: 8px
+│
+├── .oraculo-simbolos
+│   ├── display: flex
+│   ├── justify-content: center
+│   ├── gap: 15px
+│   ├── margin: 10px 0
+│   └── font-size: 1.3rem
+│
+├── .oraculo-advertencia
+│   ├── color: var(--marfil)
+│   ├── font-size: 0.7rem
+│   ├── border-top: 1px solid var(--castaño)
+│   ├── padding-top: 6px
+│   └── margin-top: 5px
+│
+├── .campo-formulario
+│   └── margin-bottom: 15px
+│
+├── .campo-formulario label
+│   ├── display: block
+│   ├── margin-bottom: 5px
+│   ├── color: var(--ciruela)
+│   └── font-weight: 600
+│
+├── .campo-formulario input,
+├── .campo-formulario select,
+├── .campo-formulario textarea
+│   ├── width: 100%
+│   ├── padding: 8px 12px
+│   ├── border: 2px solid var(--castaño)
+│   ├── border-radius: 8px
+│   ├── background: var(--marfil)
+│   └── transition: all 0.2s ease
+│
+├── .campo-formulario input:focus,
+├── .campo-formulario select:focus,
+├── .campo-formulario textarea:focus
+│   ├── border-color: var(--mar)
+│   ├── box-shadow: 0 0 0 3px rgba(29, 79, 141, 0.2)
+│   └── outline: none
+│
+├── .campo-formulario.checkbox
+│   ├── display: flex
+│   ├── align-items: center
+│   └── gap: var(--espaciado-sm)
+│
+├── .campo-formulario.checkbox input
+│   └── width: auto
+│
+├── .boton-oraculo
+│   ├── width: 100%
+│   ├── padding: 12px
+│   ├── background: linear-gradient(135deg, var(--ciruela), var(--mar))
+│   ├── color: white
+│   ├── border: none
+│   ├── border-radius: 25px
+│   ├── font-size: 1.2rem
+│   ├── font-family: var(--fuente-titulos)
+│   ├── cursor: pointer
+│   ├── transition: all 0.2s ease
+│   └── box-shadow: var(--sombra-suave)
+│
+├── .boton-oraculo:hover
+│   ├── transform: translateY(-2px)
+│   └── box-shadow: var(--sombra-media)
+│
+├── .respuesta-oraculo
+│   ├── margin-top: var(--espaciado-lg)
+│   ├── padding: var(--espaciado-md)
+│   ├── border-radius: var(--borde-radio)
+│   ├── display: none
+│   ├── text-align: center
+│   ├── font-size: 1.2rem
+│   └── font-family: var(--fuente-titulos)
+│
+├── .respuesta-oraculo.exito
+│   ├── display: block
+│   ├── background-color: rgba(29, 79, 141, 0.2)
+│   ├── color: var(--mar)
+│   └── border: 2px solid var(--mar)
+│
+├── .respuesta-oraculo.error
+│   ├── display: block
+│   ├── background-color: rgba(140, 62, 55, 0.2)
+│   ├── color: var(--ladrillo)
+│   └── border: 2px solid var(--ladrillo)
+│
+├── .footer-principal
+│   ├── background: linear-gradient(135deg, var(--alquitran), var(--ciruela))
+│   ├── color: var(--marfil)
+│   ├── padding: 40px 0 20px
+│   ├── margin-top: 50px
+│   ├── border-top: 3px solid var(--castaño)
+│   └── box-shadow: inset 0 5px 10px rgba(0,0,0,0.2)
+│
+├── .footer-grid
+│   ├── display: grid
+│   ├── grid-template-columns: 2fr 1fr 1fr
+│   ├── gap: 30px
+│   └── margin-bottom: 30px
+│
+├── .footer-logo
+│   ├── height: 40px
+│   ├── filter: brightness(0) invert(1)
+│   └── filter: drop-shadow(0 2px 3px black)
+│
+├── .footer-info p
+│   ├── margin-bottom: var(--espaciado-xs)
+│   └── opacity: 0.9
+│
+├── .footer-links h4,
+├── .footer-creditos h4
+│   ├── color: var(--castaño)
+│   ├── margin-bottom: var(--espaciado-md)
+│   └── font-size: 1.3rem
+│
+├── .footer-links ul
+│   └── list-style: none
+│
+├── .footer-links li
+│   └── margin-bottom: var(--espaciado-xs)
+│
+├── .footer-links a
+│   ├── color: var(--marfil)
+│   ├── text-decoration: none
+│   └── transition: all 0.2s ease
+│
+├── .footer-links a:hover
+│   ├── color: var(--castaño)
+│   └── padding-left: 3px
+│
+├── .footer-bottom
+│   ├── text-align: center
+│   ├── padding-top: 20px
+│   └── border-top: 1px solid rgba(255,255,255,0.2)
+│
+├── .footer-bottom a
+│   ├── color: var(--marfil)
+│   └── text-decoration: none
+│
+└── .footer-bottom a:hover
+    ├── color: var(--castaño)
+    └── text-decoration: underline

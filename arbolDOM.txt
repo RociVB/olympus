@@ -1,0 +1,81 @@
+document (index.html)
+│
+├── <!DOCTYPE html>
+│
+├── <html lang="es">
+│   │
+│   ├── <head>
+│   │   ├── <meta charset="UTF-8">
+│   │   ├── <meta name="viewport"...>
+│   │   ├── <title>Crónicas del Olimpo</title>
+│   │   ├── <link rel="preconnect"...> (x2)
+│   │   ├── <link href="https://fonts.googleapis.com/css2..."> (Cormorant+Montserrat)
+│   │   └── <link rel="stylesheet" href="styles/style.css">
+│   │
+│   └── <body>
+│       │
+│       ├── <header class="header-principal">
+│       │   └── <div class="container">
+│       │       ├── <div class="header-content">
+│       │       │   ├── <div class="logo-container">
+│       │       │   │   ├── <img src="images/logo dorado sin fondo.png" class="logo">
+│       │       │   │   └── <h1 class="site-title">Crónicas del Olimpo</h1>
+│       │       │   └── <p class="epigrafe">"Donde los inmortales gobiernan..."</p>
+│       │       └── <nav class="nav-principal">
+│       │           └── <ul class="nav-menu">
+│       │               ├── <li><a href="index.html" class="nav-link active">🏛️ Inicio</a></li>
+│       │               ├── <li><a href="dioses.html" class="nav-link">⚡ Dioses</a></li>
+│       │               ├── <li><a href="bestiario.html" class="nav-link">🐉 Bestiario</a></li>
+│       │               └── <li><a href="oraculo.html" class="nav-link">🔮 Oráculo</a></li>
+│       │
+│       ├── <main>
+│       │   ├── <section class="hero">
+│       │   │   └── <div class="container">
+│       │   │       └── <div class="hero-grid">
+│       │   │           ├── <div class="hero-texto">
+│       │   │           │   ├── <h2>Bienvenido al Monte Olimpo</h2>
+│       │   │           │   ├── <p class="hero-subtitulo">El hogar de los dioses inmortales</p>
+│       │   │           │   ├── <p>Desde la cima más alta de Grecia...</p>
+│       │   │           │   └── <div class="hero-botones">
+│       │   │           │       ├── <a href="dioses.html" class="btn btn-primario">Conocer los dioses</a>
+│       │   │           │       └── <a href="oraculo.html" class="btn btn-secundario">Consultar oráculo</a>
+│       │   │           └── <div class="hero-imagen">
+│       │   │               └── <img src="images/olimpoo.jpg" alt="olimpoo">
+│       │   │
+│       │   ├── <section class="caracteristicas">
+│       │   │   └── <div class="container">
+│       │   │       ├── <h2 class="seccion-titulo">El Legado de los Dioses</h2>
+│       │   │       └── <div class="caracteristicas-grid">
+│       │   │           ├── <article class="card-caracteristica"> (3 cards)
+│       │   │
+│       │   └── <section class="cita-epica">
+│       │       └── <div class="container">
+│       │           ├── <blockquote>"Canta, oh musa..."</blockquote>
+│       │           └── <cite>— Homero, La Ilíada</cite>
+│       │
+│       └── <footer class="footer-principal">
+│           └── <div class="container">
+│               ├── <div class="footer-grid">
+│               │   ├── <div class="footer-info">
+│               │   │   ├── <img src="images/logo negro sin fondo.png" class="footer-logo">
+│               │   │   ├── <p>Crónicas del Olimpo © 2026</p>
+│               │   │   └── <p>Proyecto académico de Diseño Web</p>
+│               │   │
+│               │   ├── <div class="footer-links">
+│               │   │   ├── <h4>Explora</h4>
+│               │   │   └── <ul>
+│               │   │       ├── <li><a href="index.html">Inicio</a></li>
+│               │   │       ├── <li><a href="dioses.html">Dioses</a></li>
+│               │   │       ├── <li><a href="bestiario.html">Bestiario</a></li>
+│               │   │       └── <li><a href="oraculo.html">Oráculo</a></li>
+│               │   │
+│               │   └── <div class="footer-creditos">
+│               │       ├── <h4>El Olimpo</h4>
+│               │       ├── <p>12 dioses olímpicos</p>
+│               │       ├── <p>Criaturas mitológicas</p>
+│               │       └── <p>El destino te espera</p>
+│               │
+│               └── <div class="footer-bottom">
+│                   └── <p><a href="#top">⬆️ Regresar al Olimpo</a></p>
+│
+└── <script src="js/js.js"></script>

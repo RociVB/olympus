@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestiario · Crónicas del Olimpo</title>
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header-principal">
+        <div class="container">
+            <div class="header-content"> 
+                <div class="logo-container"> 
+                    <img src="images/logo dorado sin fondo.png" alt="Crónicas del Olimpo" class="logo">
+                    <h1 class="site-title">Crónicas del Olimpo</h1>
+                </div>
+                <p class="epigrafe">"Donde los inmortales gobiernan el destino de los hombres"</p>  
+            </div>
+        
+            <nav class="nav-principal"> 
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">🏛️ Inicio</a></li>
+                    <li><a href="dioses.html" class="nav-link">⚡ Dioses</a></li>
+                    <li><a href="bestiario.html" class="nav-link active">🐉 Bestiario</a></li>
+                    <li><a href="oraculo.html" class="nav-link">🔮 Oráculo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- titulo -->
+        <section class="pagina-titulo">
+            <div class="container">
+                <h2>🐉 Bestiario Mitológico</h2>
+                <p>Criaturas que habitaron los mitos y desafiaron a los héroes</p>
+            </div>
+        </section>
+
+        <!-- intro -->
+        <section class="bestiario-intro">
+            <div class="container">
+                <div class="intro-contenido" style="background-color: var(--alquitran); color: var(--marfil); padding: 2rem; border-radius: 16px; border-left: 8px solid var(--ladrillo);">
+                    <p style="font-size: 1.3rem; font-style: italic;">"Bestias que aterrorizaron reinos, criaturas que desafiaron a los dioses, monstruos que encontraron su fin en manos de héroes legendarios."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRID DE CRIATURAS -->
+        <section class="bestiario-grid-section">
+            <div class="container">
+                <div class="bestiario-grid">
+                    <!-- CERBERO -->
+                    <article class="card-criatura">
+                        <div class="criatura-header">
+                            <span class="criatura-icono">🐕</span>
+                            <h3>Cerbero</h3>
+                        </div>
+                        <div class="criatura-body">
+                            <p class="criatura-clasificacion">🔮 Can del Inframundo</p>
+                            <p>Perro de tres cabezas que guarda la puerta del Inframundo. Permite la entrada de las almas pero impide su salida. Domado por Heracles en uno de sus doce trabajos.</p>
+                            <div class="criatura-stats">
+                                <span><strong>Origen:</strong> Inframundo</span>
+                                <span><strong>Héroe:</strong> Heracles</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- HIDRA -->
+                    <article class="card-criatura">
+                        <div class="criatura-header">
+                            <span class="criatura-icono">🐍</span>
+                            <h3>Hidra de Lerna</h3>
+                        </div>
+                        <div class="criatura-body">
+                            <p class="criatura-clasificacion">💀 Serpiente acuática</p>
+                            <p>Criatura con múltiples cabezas que se regeneraban al ser cortadas. Su aliento era venenoso. Derrotada por Heracles con ayuda de su sobrino Yolao.</p>
+                            <div class="criatura-stats">
+                                <span><strong>Origen:</strong> Pantano de Lerna</span>
+                                <span><strong>Héroe:</strong> Heracles</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- MINOTAURO -->
+                    <article class="card-criatura">
+                        <div class="criatura-header">
+                            <span class="criatura-icono">🐂</span>
+                            <h3>Minotauro</h3>
+                        </div>
+                        <div class="criatura-body">
+                            <p class="criatura-clasificacion">🏛️ Bestia de Creta</p>
+                            <p>Ser con cuerpo de hombre y cabeza de toro. Encerrado en el laberinto de Creta por el rey Minos. Devoraba a los jóvenes atenienses hasta que Teseo lo mató.</p>
+                            <div class="criatura-stats">
+                                <span><strong>Origen:</strong> Creta</span>
+                                <span><strong>Héroe:</strong> Teseo</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- MEDUSA -->
+                    <article class="card-criatura">
+                        <div class="criatura-header">
+                            <span class="criatura-icono">🐍</span>
+                            <h3>Medusa</h3>
+                        </div>
+                        <div class="criatura-body">
+                            <p class="criatura-clasificacion">👁️ Gorgona</p>
+                            <p>Una de las tres Gorgonas, la única mortal. Su mirada convertía en piedra a quien la mirara. Tenía serpientes en lugar de cabello. Decapitada por Perseo.</p>
+                            <div class="criatura-stats">
+                                <span><strong>Origen:</strong> Más allá del Océano</span>
+                                <span><strong>Héroe:</strong> Perseo</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- QUIMERA -->
+                    <article class="card-criatura">
+                        <div class="criatura-header">
+                            <span class="criatura-icono">🦁</span>
+                            <h3>Quimera</h3>
+                        </div>
+                        <div class="criatura-body">
+                            <p class="criatura-clasificacion">🔥 Híbrido mortal</p>
+                            <p>Criatura con cabeza de león, cuerpo de cabra y cola de serpiente. Escupía fuego. Aterrorizaba Licia hasta que Belerofonte la mató montando a Pegaso.</p>
+                            <div class="criatura-stats">
+                                <span><strong>Origen:</strong> Licia</span>
+                                <span><strong>Héroe:</strong> Belerofonte</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PEGASO -->
+                    <article class="card-criatura">
+                        <div class="criatura-header">
+                            <span class="criatura-icono">🦄</span>
+                            <h3>Pegaso</h3>
+                        </div>
+                        <div class="criatura-body">
+                            <p class="criatura-clasificacion">✨ Caballo alado</p>
+                            <p>Nació de la sangre de Medusa cuando Perseo la decapitó. Caballo divino, compañero de Belerofonte. Fue el primero en beber de la fuente Hipocrene.</p>
+                            <div class="criatura-stats">
+                                <span><strong>Origen:</strong> Sangre de Medusa</span>
+                                <span><strong>Héroe:</strong> Belerofonte</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-principal">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="images/logo negro sin fondo.png" alt="Crónicas del Olimpo" class="footer-logo">
+                    <p>Crónicas del Olimpo © 2026</p>
+                    <p>Proyecto académico de Diseño Web</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explora</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="dioses.html">Dioses</a></li>
+                        <li><a href="bestiario.html">Bestiario</a></li>
+                        <li><a href="oraculo.html">Oráculo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-creditos">
+                    <h4>El Olimpo</h4>
+                    <p>12 dioses olímpicos</p>
+                    <p>Criaturas mitológicas</p>
+                    <p>El destino te espera</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><a href="#top">⬆️ Regresar al Olimpo</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/js.js"></script>
+</body>
+</html>
